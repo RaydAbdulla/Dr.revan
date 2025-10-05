@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Revan Hoshyar </title>
+
+  <style>
+    /* ====== فۆنت خۆت زیاد بکە ====== */
+    @font-face {
+      font-family: "NRT-Bd";
+      src: url("NRT-Bd.ttf");
+    }
+
+    body {
+      font-family: "NRT-Bd", sans-serif;
+      background-color: #f7fbff;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+
+    /* ====== بەشی سەرەوە ====== */
+    header {
+      background-color: #e8f4ff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #b3defa;
+    }
+
+    header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .clinic-title {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .clinic-title h1 {
+      margin: 0;
+      color: #00395d;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .clinic-title p {
+      margin: 6px 0 0;
+      background-color: #007acc;
+      color: white;
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* ====== تابل نرخ ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: right;
+      border-bottom: 1px solid #e3f1fb;
+    }
+
+    th {
+      background-color: #007acc;
+      color: white;
+      font-size: 17px;
+    }
+
+    td.price {
+      text-align: left;
+      font-weight: bold;
+      color: #00395d;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2faff;
+    }
+
+    tr:hover {
+      background-color: #eaf6ff;
+    }
+
+    /* ====== دەتوانیت دەستکاری بکەیت ====== */
+    [contenteditable] {
+      outline: none;
+      cursor: text;
+    }
+
+    [contenteditable]:focus {
+      background-color: #fff8c6;
+      border-radius: 6px;
+    }
+
+    /* ====== دوگمە بۆ update ====== */
+    .save-btn {
+      margin: 25px auto;
+      display: block;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .save-btn:hover {
+      background-color: #005c99;
+    }
+
+    .notice {
+      text-align: center;
+      color: #007acc;
+      font-size: 14px;
+    }
+
+  @font-face {
+  font-family: 'NRT-Bd.ttf';
+  src: url('fonts/NRT-Bd.ttf') format('woff2'),
+       url('fonts/NRT-Bd.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal; }
+.myname { font-family: 'NRT-Bd.ttf', sans-serif; font-size:20px; }
+
+  </style>
+</head>
+<body>
+
+  <!-- ====== بەشی سەرەوە ====== -->
+  <header>
+   <img src="images/revan2.jpg">
+    <div class="clinic-title">
+      <h1 class="myname"> Dr. Revan Hoshyar </h1>
+      <p class="myname">بەشی ددان </p>
+    </div>
+  </header>
+
+  <!-- ====== تابل نرخ ====== -->
+  <table id="priceTable">
+    <thead>
+      <tr>
+        <th contenteditable="true">خزمەتگوزاری</th>
+        <th contenteditable="true">نرخ (IQD)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true">دایرێکت فێنەر (Direct veneer)</td>
+        <td class="price" contenteditable="true">75,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">تغلیف زەرگون</td>
+        <td class="price" contenteditable="true">125,000 - 300,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">زرع ئاسنان</td>
+        <td class="price" contenteditable="true">600,000 - 650,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">تغلیف سیرامیک</td>
+        <td class="price" contenteditable="true">90,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">حشو ئەبیض</td>
+        <td class="price" contenteditable="true">30,000 - 45,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">حشو ئاسوود</td>
+        <td class="price" contenteditable="true">25,000 - 40,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">تبییض الأسنان (Bleaching)</td>
+        <td class="price" contenteditable="true">120,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">تنظیف الأسنان</td>
+        <td class="price" contenteditable="true">25,000 - 35,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">بولیش الأسنان</td>
+        <td class="price" contenteditable="true">15,000</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">قلع الأسنان</td>
+        <td class="price" contenteditable="true">15,000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </p>
+  </script>
+
+</body>
+</html>
